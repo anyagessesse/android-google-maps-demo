@@ -156,7 +156,9 @@ public class MapDemoActivity extends AppCompatActivity implements GoogleMap.OnMa
         // Configure dialog button (Cancel)
         alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel",
                 new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) { dialog.cancel(); }
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
                 });
 
         // Display the dialog
@@ -228,7 +230,7 @@ public class MapDemoActivity extends AppCompatActivity implements GoogleMap.OnMa
 
     /*
      * Called when the Activity becomes visible.
-    */
+     */
     @Override
     protected void onStart() {
         super.onStart();
@@ -236,7 +238,7 @@ public class MapDemoActivity extends AppCompatActivity implements GoogleMap.OnMa
 
     /*
      * Called when the Activity is no longer visible.
-	 */
+     */
     @Override
     protected void onStop() {
         super.onStop();
