@@ -86,6 +86,7 @@ public class MapDemoActivity extends AppCompatActivity implements GoogleMap.OnMa
                 @Override
                 public void onMapReady(GoogleMap map) {
                     loadMap(map);
+                    map.setInfoWindowAdapter(new CustomWindowAdapter(getLayoutInflater()));
                 }
             });
         } else {
