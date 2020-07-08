@@ -27,4 +27,4 @@ local.properties
 .idea
 build
 import-summary.txt
-strings.xml
+secrets.xml
